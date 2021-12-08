@@ -1,0 +1,192 @@
+<%- include ('layout/header') %>
+
+<div class="nav-bar">
+  <div class="menu">
+    <div class="phone-search">
+      <form action="">
+        <input type="text" placeholder="search" />
+        <i class="fas fa-search"></i>
+      </form>
+    </div>
+    <li>TRANG CHỦ</li>
+    <li>GIỚI THIỆU</li>
+    <li>SẢN PHẨM</li>
+    <li>TIN TỨC</li>
+    <li>HỎI ĐÁP</li>
+    <li>LIÊN HỆ</li>
+  </div>
+  <div class="contact">
+    <li><i class="fab fa-facebook-f"></i></li>
+    <li><i class="fab fa-instagram-square"></i></li>
+    <li><i class="fab fa-twitter"></i></li>
+    <li><i class="fas fa-mail-bulk"></i></li>
+  </div>
+</div>
+<div class="slide">
+  <div class="slide-info">
+    <p>Thời gian có hạn: Chỉ trực tuyến!</p>
+    <strong
+      >KHUYẾN MÃI <br />
+      MÙA THU</strong
+    >
+    <p>Giảm giá 20% 'Gỉam giá phải có'</p>
+    <a href="">THỜI TRANG NỮ</a>
+    <a href="">THỜI TRANG NAM</a>
+  </div>
+  <img src="./images/slide.jpg" alt="" />
+</div>
+<div class="category">
+  <div>
+    <a href="">Thời trang nam</a>
+    <img src="./images/02-2.jpg" alt="" />
+  </div>
+  <div>
+    <a href="">Thời trang nam</a>
+    <img src="./images/02-2.jpg" alt="" />
+  </div>
+  <div>
+    <a href="">Thời trang nam</a>
+    <img src="./images/02-2.jpg" alt="" />
+  </div>
+</div>
+<div class="category-hot">
+  <li><a href="">Sản phẩm mới</a></li>
+  <li><a href="">Sản phẩm nổi bật</a></li>
+  <li><a href="">Sản phẩm khuyến mãi</a></li>
+  <div class="all-products">
+    <div class="product">
+      <div class="product-image">
+        <img src="./images/product.png" alt="" />
+      </div>
+      <div class="product-info">
+        <label class="category-name">PHỤ KIỆN NAM</label>
+        <label class="name-product">Quần ống le</label>
+
+        <p>
+          <i class="fas fa-star"></i><i class="fas fa-star"></i
+          ><i class="fas fa-star"></i> <i class="fas fa-star"></i
+          ><i class="fas fa-star"></i>
+        </p>
+        <label class="price-product">690,000 ₫</label>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="event-products">
+  <div class="event">
+    <div class="event-detail">
+      <label for="">HÀNG MỚI VỀ</label><br />
+      <label for="">CHỌN MÀU CỦA BẠN</label>
+      <p for="">Phong cách thiết yếu trở nên sống động với màu sắc tươi sáng</p>
+      <br />
+      <a href="">Xem chi tiết</a>
+      <a href="">Mua ngay</a>
+    </div>
+    <img src="./images/slide1.jpg" alt="" />
+  </div>
+  <div class="event">
+    <div class="event-detail">
+      <label for="">HÀNG MỚI VỀ</label><br />
+      <label for="">CHỌN MÀU CỦA BẠN</label>
+      <p for="">Phong cách thiết yếu trở nên sống động với màu sắc tươi sáng</p>
+      <br />
+      <a href="">Xem chi tiết</a>
+      <a href="">Mua ngay</a>
+    </div>
+    <img src="./images/slide1.jpg" alt="" />
+  </div>
+  <div></div>
+</div>
+
+<div class="product-top">
+  <h3>Sản phẩm bán chạy</h3>
+
+  <div class="all-products">
+    <% product.forEach(function(product) { %>
+    <div class="product">
+      <div class="product-image">
+        <img src="<%= product.image %>" alt="" />
+      </div>
+      <div class="product-info">
+        <h5><%= product.image %></h5>
+        <label class="category-name"><%= product.category %></label>
+        <label class="name-product"><%= product.name %></label>
+
+        <p>
+          <i class="fas fa-star"></i><i class="fas fa-star"></i
+          ><i class="fas fa-star"></i> <i class="fas fa-star"></i
+          ><i class="fas fa-star"></i>
+        </p>
+        <label class="price-product"><%= product.price %> ₫</label>
+      </div>
+    </div>
+    <% }) %>
+  </div>
+</div>
+<div class="brands">
+  <hr />
+  <img src="./images/brand1.png" alt="" />
+  <img src="./images/brand2.png" alt="" />
+  <img src="./images/brand.png" alt="" />
+  <img src="./images/brand1.png" alt="" />
+  <img src="./images/brand2.png" alt="" />
+</div>
+<div class="news">
+  <h3>TIN TỨC MỚI</h3>
+
+  <div class="new">
+    <img src="./images/new.jpg" alt="" />
+    <div class="new-detail">
+      <p>
+        3 xu hướng mùa Thu 2021 cực kỳ đơn giản thoải mái, có sẵn trong tủ áo và
+        ai mặc cũng chất!
+      </p>
+      <label class="day-update" for="">18 Tháng Mười, 2021</label>
+      <label class="solid">aaaaaaaaaaaaa</label>
+      <br />
+      <br />
+      <label class=""
+        >Có một vài xu hướng dễ mặc tới mức ai cũng có thể “đu trend” ngay tức
+        khắc, hợp với mọi ngoại hình, mọi dáng người và tính cách.</label
+      >
+    </div>
+  </div>
+
+  <div class="new">
+    <img src="./images/new.jpg" alt="" />
+    <div class="new-detail">
+      <p>
+        3 xu hướng mùa Thu 2021 cực kỳ đơn giản thoải mái, có sẵn trong tủ áo và
+        ai mặc cũng chất!
+      </p>
+      <label class="day-update" for="">18 Tháng Mười, 2021</label>
+      <label class="solid">aaaaaaaaaaaaa</label>
+      <br />
+      <br />
+      <label class=""
+        >Có một vài xu hướng dễ mặc tới mức ai cũng có thể “đu trend” ngay tức
+        khắc, hợp với mọi ngoại hình, mọi dáng người và tính cách.</label
+      >
+    </div>
+  </div>
+</div>
+<hr />
+<div class="footer-contact">
+  <div class="register">
+    <div>
+      <h5>ĐĂNG KÝ BẢN TIN</h5>
+      <label for=""
+        >Đăng ký để nhận thông tin những sản phẩm mới, sản phẩm khuyễn mãi và
+        các thông tin khác.</label
+      >
+    </div>
+    <div>
+      <form action="">
+        <input class="email" type="text" placeholder="Địa chỉ Email" />
+        <button>Đăng ký</button>
+      </form>
+    </div>
+  </div>
+
+  <%- include ('layout/footer') %>
+</div>
